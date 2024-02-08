@@ -9,6 +9,7 @@
     "isolatedModules": true,
     /* Strictness */
     "strict": true,
+    "moduleDetection": "force",
     "noUncheckedIndexedAccess": true,
     /* If NOT transpiling with TypeScript: */
     "moduleResolution": "Bundler",
