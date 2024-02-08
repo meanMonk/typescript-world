@@ -4,6 +4,12 @@ const productPrices = {
   Orange: 0.8,
 };
 
-const getPrice = (productName: string) => {
+const getPrice = (productName: keyof typeof productPrices) => {
   return productPrices[productName];
 };
+
+
+/* or can declare types for productPrices 
+
+  Record<string, number>
+*/

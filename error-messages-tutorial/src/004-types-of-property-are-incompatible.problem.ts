@@ -1,4 +1,11 @@
-const routingConfig = {
+type RoutingConfig = {
+  routes: {
+    path: string;
+    component: string | number
+  }[]
+}
+
+const routingConfig: RoutingConfig = {
   routes: [
     {
       path: "home",
@@ -15,11 +22,6 @@ const routingConfig = {
   ],
 };
 
-const createRoutes = (config: {
-  routes: {
-    path: string;
-    component: string;
-  }[];
-}) => {};
+const createRoutes = (config: RoutingConfig) => { };
 
 createRoutes(routingConfig);
